@@ -127,13 +127,13 @@ def fetch_and_upload_dividends():
         try:
             worksheet = spreadsheet.worksheet(SHEET_NAME)
         except gspread.exceptions.WorksheetNotFound:
-            logging.error(f"❌ Worksheet '{SHEET_NAME}' not found in the spreadsheet.")
+            logging.error(f" Worksheet '{SHEET_NAME}' not found in the spreadsheet.")
             return
 
         logging.info(" Clearing existing data in the sheet...")
         worksheet.clear()
 
-        logging.info(f"📤 Uploading {len(dividends_df)} records to Google Sheets...")
+        logging.info(f" Uploading {len(dividends_df)} records to Google Sheets...")
         worksheet.update([dividends_df.columns.tolist()] + dividends_df.values.tolist(),
                           value_input_option='USER_ENTERED')
 
