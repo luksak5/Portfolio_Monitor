@@ -20,7 +20,7 @@ logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(
 # =========================
 # Step 2: Google Sheets API Setup
 # =========================
-# ✅ Updated JSON key file path
+#  Updated JSON key file path
 json_key_file = '/content/drive/My Drive/keys/dividend-tracker-449904-45b1f3e4aebb.json'
 
 scope = ["https://spreadsheets.google.com/feeds", "https://www.googleapis.com/auth/drive"]
@@ -28,7 +28,7 @@ scope = ["https://spreadsheets.google.com/feeds", "https://www.googleapis.com/au
 try:
     creds = ServiceAccountCredentials.from_json_keyfile_name(json_key_file, scope)
     client = gspread.authorize(creds)
-    logging.info("✅ Successfully authenticated with Google Sheets API.")
+    logging.info(" Successfully authenticated with Google Sheets API.")
 except Exception as e:
     logging.error(f"❌ Failed to authenticate with Google Sheets API: {e}")
     logging.error(traceback.format_exc())
@@ -94,21 +94,21 @@ def fetch_and_upload_dividends():
                 for date, amount in dividends.items():
                     dividend_records.append({
                         'Ticker': name,
-                        'Ex-Dividend Date': date.strftime('%Y-%m-%d'),  # ✅ Convert date to string
+                        'Ex-Dividend Date': date.strftime('%Y-%m-%d'),  #  Convert date to string
                         'Dividend Amount': amount
                     })
-                logging.info(f"✅ Found {len(dividends)} dividend records for {ticker_symbol}.")
+                logging.info(f"Found {len(dividends)} dividend records for {ticker_symbol}.")
             else:
-                logging.warning(f"⚠️ No dividend data found for {ticker_symbol}.")
+                logging.warning(f"No dividend data found for {ticker_symbol}.")
 
             tickers_processed += 1
 
         except Exception as e:
-            logging.error(f"❌ Error fetching data for {ticker_symbol}: {e}")
+            logging.error(f"Error fetching data for {ticker_symbol}: {e}")
             logging.error(traceback.format_exc())
 
     if not dividend_records:
-        logging.warning("⚠️ No dividend records collected. Exiting function.")
+        logging.warning(" No dividend records collected. Exiting function.")
         return
 
     # Convert to DataFrame
@@ -130,17 +130,17 @@ def fetch_and_upload_dividends():
             logging.error(f"❌ Worksheet '{SHEET_NAME}' not found in the spreadsheet.")
             return
 
-        logging.info("🗑️ Clearing existing data in the sheet...")
+        logging.info(" Clearing existing data in the sheet...")
         worksheet.clear()
 
         logging.info(f"📤 Uploading {len(dividends_df)} records to Google Sheets...")
         worksheet.update([dividends_df.columns.tolist()] + dividends_df.values.tolist(),
                           value_input_option='USER_ENTERED')
 
-        logging.info("✅ Dividend data uploaded successfully to Google Sheets!")
+        logging.info("Dividend data uploaded successfully to Google Sheets!")
 
     except Exception as e:
-        logging.error(f"❌ Error uploading data to Google Sheets: {e}")
+        logging.error(f" Error uploading data to Google Sheets: {e}")
         logging.error(traceback.format_exc())
 
 # =========================
@@ -150,4 +150,4 @@ def fetch_and_upload_dividends():
 fetch_and_upload_dividends()
 
 
-print("✅ Data successfully updated in Google Sheets!")
+print(" Data successfully updated in Google Sheets!")
