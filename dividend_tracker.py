@@ -21,7 +21,7 @@ logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(
 # Step 2: Google Sheets API Setup
 # =========================
 #  Updated JSON key file path
-json_key_file = '/content/drive/My Drive/keys/dividend-tracker-449904-45b1f3e4aebb.json'
+json_key_file = '/content/drive/My Drive/keys/your key name uploaded on gdrive.json'
 
 scope = ["https://spreadsheets.google.com/feeds", "https://www.googleapis.com/auth/drive"]
 
@@ -35,7 +35,7 @@ except Exception as e:
     exit()  # Exit if authentication fails
 
 # Spreadsheet ID and sheet details
-SPREADSHEET_ID = '1acdknVZlB5hWK5Zqk_rJA-V4IDvBMoFB3WFEOVUGPOs'  # Replace with your Spreadsheet ID
+SPREADSHEET_ID = 'your sheet id'  # Replace with your Spreadsheet ID
 SHEET_NAME = 'Dividend Amount'  # Ensure this matches the exact sheet name
 
 # =========================
@@ -113,7 +113,7 @@ def fetch_and_upload_dividends():
 
     # Convert to DataFrame
     dividends_df = pd.DataFrame(dividend_records)
-    logging.info(f"📊 Collected dividend data for {tickers_processed} tickers.")
+    logging.info(f" Collected dividend data for {tickers_processed} tickers.")
 
     # =========================
     # Upload Data to Google Sheet
