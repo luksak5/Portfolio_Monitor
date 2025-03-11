@@ -1,0 +1,15 @@
+Client_Name,Email_Id,Asset_Type,Transaction_Type,Security_Name,Ticker,Cash_Flow,Date,Currency,Reporting_Currency,Exchange Rate
+abc 123,abc123@gmail.com,Equity,dividend payout,Google,NASDAQ:GOOGL,22.6,06-10-2024,USD,USD,1
+abc 456,abc456@gmail.com,Equity,dividend payout,Google,NASDAQ:GOOGL,18,06-10-2024,USD,USD,1
+abc 789,abc789@gmail.com,Equity,dividend payout,Google,NASDAQ:GOOGL,22.6,09-09-2024,USD,USD,1
+abc 789,abc789@gmail.com,Equity,dividend payout,Google,NASDAQ:GOOGL,18,09-09-2024,USD,USD,1
+abc 123,abc123@gmail.com,Equity,dividend payout,Google,NASDAQ:GOOGL,190.1193207,09-09-2024,USD,INR,83.9809
+abc 456,abc456@gmail.com,Equity,dividend payout,Google,NASDAQ:GOOGL,2.26384,09-09-2024,USD,USD,1
+abc 123,abc123@gmail.com,Equity,dividend payout,Google,NASDAQ:GOOGL,1.4,09-09-2024,USD,USD,1
+abc 123,abc123@gmail.com,Equity,dividend payout,Google,NASDAQ:GOOGL,198.771033,09-09-2024,USD,INR,83.9809
+abc 456,abc456@gmail.com,Equity,dividend payout,Google,NASDAQ:GOOGL,2.36686,09-09-2024,USD,USD,1
+abc 789,abc789@gmail.com,Equity,dividend payout,Google,NASDAQ:GOOGL,18,12-09-2024,USD,USD,1
+abc 123,ac123@gmail.com,Equity,dividend payout,Google,NASDAQ:GOOGL,192.0807116,12-09-2024,USD,INR,84.8473
+abc 456,abc456@gmail.com,Equity,dividend payout,Google,NASDAQ:GOOGL,2.26384,12-09-2024,USD,USD,1
+abc 789,abc789@gmail.com,Equity,dividend payout,Google,NASDAQ:GOOGL,1.4,12-09-2024,USD,USD,1
+abc 123,abc123@gmail.com,Equity,dividend payout,Google,NASDAQ:GOOGL,200.8216805,12-09-2024,USD,INR,84.8473
