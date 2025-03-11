@@ -29,8 +29,10 @@ Google App ScripT Implementation
 1. Portfolio_Summary.gs:
    
    • Fetches transaction data and dividend data from Input.csv and Dividend Summary.csv.
+   
    • Performs backend calculation for key portfolio metrics which could be seen in Portfolio Summary.csv and 
      Overall Portfolio Summary.csv.
+   
    • The Portfolio Summary.csv and Overall Portfolio Summary.csv are the two output sheets from 
      Portfolio_Summary.gs. The Portfolio Summary sheet contains the script wise details for every client with 
      performance metrics and other metric to watch on every security's performance for respective client. The 
