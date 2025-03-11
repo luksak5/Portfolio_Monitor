@@ -1,0 +1,4 @@
+Client Name,Email ID,Equity (%),Gold (%),REITs (%),Debt (%),Portfolio Current Value(Reporting Currency),Total Net Purchase Value (Reporting Currency),Total Realized Gain/Loss (Reporting Currency),Total Dividend Payout (Reporting Currency),Overall Portfolio Gain/Loss (Reporting Currency),Portfolio XIRR (Reporting Currency)
+abc 123,abc123@gmail.com,38.54%,61.46%,0.00%,0.00%,"1,31,199.60","1,24,037.77",0,639.65,"7,801.48",24.85%
+abc 456,abc456@gmail.com,36.32%,15.77%,3.81%,44.09%,"2,06,732.80","2,02,600.80",-9,686.61,"4,809.61",4.98%
+abc 789,abc789@gmail.com,0.00%,11.48%,0.00%,88.52%,"2,48,362.04","2,33,962.19","61,282.01","4,198.03","79,879.89",11.61%
