@@ -34,10 +34,10 @@ Google App ScripT Implementation
      Overall Portfolio Summary.csv.
    
    • The Portfolio Summary.csv and Overall Portfolio Summary.csv are the two output sheets from 
-     Portfolio_Summary.gs. The Portfolio Summary sheet contains the script wise details for every client with 
-     performance metrics and other metric to watch on every security's performance for respective client. The 
-     Overall Portforlio Summary sheet contains overall clubbed portfolio's performance and 
-     other metric 
+     Portfolio_Summary.gs. The Portfolio Summary sheet contains detailed,security-wise performance for every 
+     client with asset type breakdown,performance and other metrics. Overall Portforlio Summary sheet contains 
+     comprehensive view of client's portfolio demonstrating portfolio metrics which includes net 
+     investment,current portfolio value, realized- unrealized gain /loss, dividend, xirr,absolute return etc.
    
    
 
