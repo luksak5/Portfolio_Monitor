@@ -48,9 +48,40 @@ Google App ScripT Implementation
      client with asset type breakdown,performance and other metrics. Overall Portforlio Summary sheet contains 
      comprehensive view of client's portfolio demonstrating portfolio metrics which includes net 
      investment,current portfolio value, realized- unrealized gain /loss, dividend, xirr,absolute return etc.
+
+    • Instead of using external APIs, the system generates a temporary sheet within Google Sheets to obtain price details.
    
    
 
+3. Dividend_Summary.gs:
+   
+   • Fetches transaction data and dividend data from Input.csv and Dividend Amount.csv.
+   
+   • Generate Dividend Summary sheet(Dividend Summary.csv) client wise dividend information for respective tickers.
 
+   • Instead of using external APIs, the system generates a temporary sheet within Google Sheets to obtain price details.
+
+4. Dividend_Tracker.py:
+   
+   • Fetches dividend amount details from yahoo fianncial API and update the detials like dividend amount, ex dividend date and ticker in Dividend Amount sheet. 
+
+
+Output Processing
+
+1. Portfolio Summary.csv and Overall Portfolio Summary.csv
+
+   • The Portfolio Summary.csv and Overall Portfolio Summary.csv are the two output sheets from 
+     Portfolio_Summary.gs. The Portfolio Summary sheet contains detailed,security-wise performance for every 
+     client with asset type breakdown,performance and other metrics. Overall Portforlio Summary sheet contains 
+     comprehensive view of client's portfolio demonstrating portfolio metrics which includes net 
+     investment,current portfolio value, realized- unrealized gain /loss, dividend, xirr,absolute return etc.
+   
+2. Portfolio Dashboard Update
+
+   • A summary report is generated for each client, showcasing portfolio allocation, investment performance, and dividend payouts 
+   • The system fetches live security prices using the temporary sheet method.
+
+
+   
 
 
